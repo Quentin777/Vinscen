@@ -1,0 +1,22 @@
+1er colonne classement
+2ème colonne nom
+3ème colonne dossard
+
+
+Coder une page web pour faciliter la recherche du résultat interface graphique (http://www.vinsceneenbourbonnais.com/)
+
+classer par ordre alphabetique ou ordre de classement (filtre)
+on peut faire un tri via les dossard 
+
+on doit classer par classement , par ordre alphabethique (nom ou prenom) et par non de dossard
+je veux avoir la possibilité de rechercher par num de dossard qui ressort la ligne du nom prenom classement et dossard (par prénom et nom aussi)
+faire un code pour bloquer les pays non francophone
+
+résultat 2016
+
+
+(on peut prendre la variable qu'il y'a dans les exos)
+
+il y'a deux variable 
+
+var liste et liste2

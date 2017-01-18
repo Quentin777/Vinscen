@@ -1,0 +1,11 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: white;
+}
+
+
+.container{
+	height: 800px;
+	border: solid 1px black;
+}
+
