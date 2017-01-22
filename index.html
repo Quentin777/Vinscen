@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="CSS/style.css">
 <head>
 	<title>Vinscene</title>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-		<table class="table table-bordered">         
-         <thead> 
-         </thead> 
-            <tbody id="test">
-                 <tr> 
-                 <td><div id="classement"></div></td> 
-                 <td><div id="nom"></div></td>
-                 <td><div id="dossard"></div></td> 
-                 </tr>  
-            <tbody> 
-        </script>       
-		</table>
-        <form>
-        <input type="text" name="saisie">
-        <input type="button" name="saisie" value="recherche">
+        <form class="navbar-form" name="formulmaireRecherche" onsubmit="clique(); return false;">
+              <input type="texte" name="recherche" class="form-control">
+
+              <input type="radio" name="choixdutype" value="classement" class="radio-inline" checked> 
+              <label>Classement</label>
+              <input type="radio" name="choixdutype" value="dossard" class="radio-inline">
+              <label> Dossard</label>
+              <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>recherche</button>
         </form>
-<link rel="stylesheet" type="javascript" href="Javascript/javascript.js">
+    		<table class="table table-bordered col-md-12">         
+                <thead> 
+                </thead> 
+                <tbody id="classement">
+                </tbody>          
+    		</table>
+        </div>
+    </div>    
+    <script type="text/javascript" src="Javascript/javascript.js" ></script>
 </body>
 </html>
+
