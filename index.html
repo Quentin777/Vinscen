@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 <head>
 	<title>Vinscene</title>
 </head>
@@ -11,16 +12,24 @@
 		<div class="row">
         <form class="navbar-form" name="formulmaireRecherche" onsubmit="clique(); return false;">
               <input type="texte" name="recherche" class="form-control">
-
-              <input type="radio" name="choixdutype" value="classement" class="radio-inline" checked> 
-              <label>Classement</label>
+              <input type="radio" name="choixdutype" value="classement" class="radio-inline" checked> <!-- bouton-->
+              <label>Classement</label> <!-- titre bouton-->
               <input type="radio" name="choixdutype" value="dossard" class="radio-inline">
               <label> Dossard</label>
+              <input type="radio" name="choixdutype" value="Nom" class="radio-inline">
+              <label> Nom</label>
+              <input type="radio" name="choixdutype" value="prenom" class="radio-inline">
+              <label> prenom</label>
               <button type="submit" class="btn btn-default">
               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>recherche</button>
         </form>
     		<table class="table table-bordered col-md-12">         
                 <thead> 
+                <tr>
+                    <th><button type="button" onclick="tri(0)">classement</button></th>
+                    <th><button type="button"onclick="tri(1)">NOM</button><button type="button" onclick="tri_prenom()">Prenom</button></th>
+                    <th><button type="button" onclick="tri(2)">dossard</button></th>
+                </tr>
                 </thead> 
                 <tbody id="classement">
                 </tbody>          
